@@ -18,7 +18,7 @@ const FoodCart: React.FC = () => {
       id: '1',
       name: 'Fried Rice',
       restaurant: 'Chinese Wok',
-      image: '/lovable-uploads/eb78420e-284a-4054-94b0-35596e5fae16.png',
+      image: './image.jpg',
       quantity: 1,
       isVegetarian: true
     },
@@ -26,7 +26,7 @@ const FoodCart: React.FC = () => {
       id: '2',
       name: 'Fried Rice',
       restaurant: 'Chinese Wok',
-      image: '/lovable-uploads/eb78420e-284a-4054-94b0-35596e5fae16.png',
+      image: './image.jpg',
       quantity: 1,
       isVegetarian: true
     },
@@ -34,7 +34,15 @@ const FoodCart: React.FC = () => {
       id: '3',
       name: 'Fried Rice',
       restaurant: 'Chinese Wok',
-      image: '/lovable-uploads/eb78420e-284a-4054-94b0-35596e5fae16.png',
+      image: './image.jpg',
+      quantity: 1,
+      isVegetarian: true
+    },
+    {
+      id: '4',
+      name: 'Fried Rice',
+      restaurant: 'Chinese Wok',
+      image: './image.jpg',
       quantity: 1,
       isVegetarian: true
     }

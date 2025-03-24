@@ -71,18 +71,11 @@ const FoodCartItem: React.FC<FoodCartItemProps> = ({
           >
             <Minus size={18} />
           </button>
-          <div className="h-8 flex items-center justify-center border-t border-b border-gray-200 bg-white px-2">
-            <div className="flex items-center font-medium">
-              {displayQuantity.split('').map((digit, index) => (
-                <span 
-                  key={index} 
-                  className="inline-block w-5 text-center text-sm"
-                >
-                  {digit}
-                </span>
-              ))}
-            </div>
+          <div className="w-8 h-8 flex items-center justify-center border-t border-b border-gray-200 bg-white">
+            <span className="text-sm font-medium">{quantity}</span>
+          
           </div>
+          
           <button
             onClick={() => onIncrement(id)}
             className="bg-foodcart-green text-white w-8 h-8 flex items-center justify-center transition-all hover:brightness-105 active:brightness-95"
