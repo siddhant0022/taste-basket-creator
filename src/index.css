@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,6 +50,8 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .dark {
@@ -98,4 +101,29 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.foodcart-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.foodcart-item {
+  transition: all 0.3s ease;
+}
+
+.foodcart-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.quantity-control {
+  transition: all 0.2s ease;
+}
+
+.quantity-control button:active {
+  transform: scale(0.95);
+}
+
+.veg-tag {
+  transition: all 0.2s ease-in-out;
 }
