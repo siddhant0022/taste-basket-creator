@@ -50,7 +50,7 @@ const FoodCartItem: React.FC<FoodCartItemProps> = ({
           <div className="flex items-center gap-2">
             <h3 className="font-medium text-foodcart-text">{name}</h3>
             {isVegetarian && (
-              <span className="veg-tag bg-[#F2FCE2] text-foodcart-green text-xs px-2 py-0.5 rounded-full">
+              <span className="veg-tag bg-[#F2FCE2] text-foodcart-green text-xs px-2 py-0.5 rounded-full border border-foodcart-green/30">
                 Veg
               </span>
             )}
