@@ -82,7 +82,7 @@ const FoodCartItem: React.FC<FoodCartItemProps> = ({
 
         <button
           onClick={() => onRemove(id)}
-          className="text-foodcart-red hover:bg-red-50 p-2 rounded-full transition-all"
+          className="bg-foodcart-red text-white w-8 h-8 flex items-center justify-center rounded-full transition-all hover:brightness-105 active:brightness-95"
           aria-label="Remove item"
         >
           <Trash size={18} />
