@@ -29,6 +29,9 @@ const FoodCartItem: React.FC<FoodCartItemProps> = ({
 }) => {
   const { imageSrc, imageLoaded } = useLazyLoadImage({ src: image });
 
+  // Pad the quantity to 4 digits
+  const displayQuantity = quantity.toString().padStart(4, '0');
+
   return (
     <div className="foodcart-item bg-white rounded-xl p-4 mb-3 flex items-center justify-between gap-4 animate-slide-in">
       <div className="flex items-center gap-3">
@@ -68,8 +71,17 @@ const FoodCartItem: React.FC<FoodCartItemProps> = ({
           >
             <Minus size={18} />
           </button>
-          <div className="w-8 h-8 flex items-center justify-center border-t border-b border-gray-200 bg-white">
-            <span className="text-sm font-medium">{quantity}</span>
+          <div className="h-8 flex items-center justify-center border-t border-b border-gray-200 bg-white px-2">
+            <div className="flex items-center font-medium">
+              {displayQuantity.split('').map((digit, index) => (
+                <span 
+                  key={index} 
+                  className="inline-block w-5 text-center text-sm"
+                >
+                  {digit}
+                </span>
+              ))}
+            </div>
           </div>
           <button
             onClick={() => onIncrement(id)}
